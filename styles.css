@@ -1,0 +1,122 @@
+/* 1. RESET FONT SECARA AGRESIF */
+
+/* Terapkan font bersih ke BODY dan semua elemen UI utama 98.css */
+body, 
+.window, 
+.title-bar, 
+.window-body, 
+.fieldset, 
+.tree-view,
+.field-row,
+p, h1, h2, h3, h4, ul, ol, li, button, select, label {
+    /* Ganti dengan font pilihan Anda yang paling bersih */
+    font-family: 'Verdana', 'Tahoma', 'Arial', sans-serif !important; 
+    /* Pastikan ukuran font memadai */
+    font-size: 14px; 
+}
+
+/* Opsional: Jika masih ada elemen yang bandel, tambahkan pengaturan ini */
+* {
+    font-family: inherit !important;
+}
+
+
+/* 2. KODE CSS LAINNYA (TIDAK BERUBAH) */
+
+/* Styling untuk mensejajarkan nama dan dropdown bahasa */
+.header-profile-row {
+/* ... (lanjutan kode CSS lainnya yang sudah ada) ... */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 10px; 
+}
+
+/* ... (lanjutan kode CSS lainnya) ... */
+
+h3, h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* 3. Pengaturan Kontainer Umum */
+.window-body {
+    padding: 10px;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: 3px groove #fff; /* Border untuk kotak informasi */
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #C0C0C0;
+    padding: 0 5px;
+    border: none;
+}
+
+/* 4. Layout Grid untuk Skill dan Pendidikan */
+.skill-grid, .education-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.skill-grid > div, .education-grid > div {
+    flex: 1;
+    padding: 5px;
+}
+
+/* 5. Gaya List (Bullet Points) */
+.job-list {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.job-list li {
+    margin-bottom: 5px;
+}
+
+/* 6. Gaya Tombol Aksi */
+.action-button {
+    background-color: #C0C0C0;
+    border: 3px outset #fff;
+    padding: 5px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.action-button:active {
+    border-style: inset;
+}
+
+/* 7. Kontak dan Tautan */
+.contact-info {
+    margin-bottom: 10px;
+    font-family: 'Courier New', monospace; /* Font ala terminal */
+}
+
+/* 8. Notes Proyek */
+.project-note {
+    font-style: italic;
+    color: #444;
+    font-size: 13px;
+    border-left: 3px solid #0000AA;
+    padding-left: 10px;
+}
+
+/* Styling untuk mensejajarkan nama dan dropdown bahasa */
+.header-profile-row {
+    display: flex;
+    justify-content: space-between; /* Untuk memisahkan nama di kiri dan dropdown di kanan */
+    align-items: center; /* Untuk mensejajarkan secara vertikal */
+    margin-bottom: 10px; 
+}
+
+/* Penyesuaian ukuran dan margin h1 agar pas */
+.header-profile-row h1 {
+    margin: 0; 
+    font-size: 24px;
+}
