@@ -119,4 +119,69 @@ legend {
 .header-profile-row h1 {
     margin: 0; 
     font-size: 24px;
+
+}
+
+/* ======================================= */
+/* MEDIA QUERIES UNTUK RESPONSIVITAS */
+/* ======================================= */
+
+@media (max-width: 768px) {
+    /* 1. Pengaturan Body dan Container Utama */
+    body {
+        /* Hapus margin agar konten memenuhi layar HP */
+        margin: 0; 
+        padding: 10px;
+    }
+
+    .cv-container {
+        /* Lebar penuh di layar kecil */
+        width: 100%; 
+        /* Hapus margin atas/bawah yang besar */
+        margin-top: 0; 
+        margin-bottom: 0;
+    }
+
+    /* 2. Pengaturan Header (Nama dan Dropdown) */
+    .header-profile-row {
+        /* Biarkan nama dan dropdown di baris yang sama, tapi beri sedikit ruang */
+        flex-direction: row;
+        flex-wrap: wrap; /* Izinkan elemen turun baris jika terlalu sempit */
+    }
+
+    .header-profile-row h1 {
+        font-size: 20px; /* Kecilkan ukuran nama */
+        margin-bottom: 5px;
+    }
+
+    /* 3. Pengaturan Detail Kontak */
+    .contact-info span {
+        display: block; /* Paksa setiap item kontak (telp, email, lokasi) ke baris baru */
+        margin-bottom: 5px;
+    }
+
+    /* 4. Teks Konten */
+    p, ul, li {
+        font-size: 13px; /* Kecilkan font untuk keterbacaan di layar kecil */
+    }
+
+    /* 5. Judul Bagian */
+    h2 {
+        font-size: 16px; 
+    }
+
+    /* 6. Tombol Download */
+    .action-button {
+        width: 100%; /* Tombol download menjadi penuh lebar */
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* 7. Footer dan Taskbar */
+    .footer-bar {
+        position: static; /* Ubah dari fixed menjadi statis di bagian bawah konten */
+        width: 100%;
+        margin-top: 20px;
+        padding: 5px 10px;
+    }
 }
